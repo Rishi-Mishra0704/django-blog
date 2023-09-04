@@ -1,0 +1,38 @@
+{% extends 'layout.html' %} 
+{%load static%}
+
+{%block title%}The mountain{%endblock%} 
+
+{%block stylesheets%}
+
+<link rel="stylesheet" href="{% static 'blog/all-posts.css'%}">
+<link rel="stylesheet" href="{% static 'blog/post.css'%}">
+{%endblock%}
+
+{%block content%}
+
+<section id="summary">
+    <h2>Post title</h2>
+    <article>
+        <img src="{% static 'blog/images/mountain.jpg' %}" alt="">
+        <address>Rishi</address>
+        <div>
+            last updated on <time>5th September </time>
+        </div>
+    </article>
+</section>
+<main>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, odit.
+    </p>
+</main>
+{%endblock%}
