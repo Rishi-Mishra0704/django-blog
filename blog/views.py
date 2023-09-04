@@ -81,7 +81,8 @@ def starting_page(request):
 
 
 def allPosts(request):
-    return render(request, "blog/all-posts.html")
+
+    return render(request, "blog/all-posts.html", { "all_posts": posts})
 
 
 def post_details(request,slug):
