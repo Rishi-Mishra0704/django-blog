@@ -9,12 +9,6 @@
 {%endblock%}
 
 {%block content%}
-<header id="main-navigation">
-  <h1><a href="">My blog</a></h1>
-  <nav>
-    <a href="/">All posts</a>
-  </nav>
-</header>
 <section id="welcome">
   <header>
     <img src="{%static "blog/images/me.png"%}" alt="Author" />
@@ -28,24 +22,7 @@
 <section id="latest-posts">
   <h2>My latest thoughts</h2>
   <ul>
-    <li>
-      <article class="post">
-        <a href="">
-          <img src="{%static 'blog/images/mountain.jpg'%}" alt="Mountain Hiking" />
-        
-        <div class="post__content">
-          <h3>Mountain Hiking</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Eligendi magni recusandae impedit provident doloribus animi
-            praesentium! In voluptatibus similique culpa iusto expedita dolor,
-            consequatur iure voluptates? Dignissimos esse ratione labore?
-          </p>
-        </div>
-        </a>
-      </article>
-    </li>
+   {% include "blog/includes/post.html" %}
   </ul>
 </section>
 
