@@ -17,7 +17,7 @@ def starting_page(request):
 
 
 def allPosts(request):
-
+    posts = Post.objects.all()
     return render(request, "blog/all-posts.html", { "all_posts": posts})
 
 
