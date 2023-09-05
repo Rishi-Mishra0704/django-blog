@@ -22,6 +22,14 @@ body {
   #summary h2 {
     color: white;
     font-size: 4.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .tag{
+    background-color: white;
+    color: #5706c0;
+    padding: 0.5rem;
+    border-radius: 12px;
   }
   
   #summary article {
@@ -34,6 +42,11 @@ body {
     color: white;
   }
   
+  #summary a{
+    color: #e7e7e7;
+    text-decoration: none;
+  }
+
   #summary article img {
     width: 12rem;
     height: 12rem;
