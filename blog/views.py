@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.generic.detail import DetailView
 
 from .models import Post, Author, Tag
+from .forms import CommentForm
 
 # Create your views here.
 
@@ -15,6 +17,13 @@ def allPosts(request):
     return render(request, "blog/all-posts.html", {"all_posts": posts})
 
 
-def post_details(request, slug):
-    post = get_object_or_404(Post,slug=slug)
-    return render(request, "blog/post-details.html", {"post": post})
+class SinlePostView(DetailView):
+    template_name = "blog/post-details.html"
+    model = Post
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["post_tags"] = self.object.tags.all()
+        context["comment_form"] = CommentForm()
+        return context
+    
