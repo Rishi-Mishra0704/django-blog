@@ -27,6 +27,7 @@ class SinglePostView(DetailView):
             "post": post,
             "post_tags": post.tags.all(),
             "comment_form": CommentForm(),
+            "comments": post.comments.all().order_by("-id")[:3],
         }
         return render(request, "blog/post-details.html", context)
 
