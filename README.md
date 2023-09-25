@@ -99,15 +99,15 @@ Install this project with:
 
 <ol>On macOS and Linux:</ol>
 
-`source venv/bin/activate`
+  `source venv/bin/activate`
 
 <ol>On Windows (Command Prompt):</ol>
 
-`venv\Scripts\activate`
+  `venv\Scripts\activate`
 
 <ol>On Windows (PowerShell):</ol>
 
-`.\venv\Scripts\Activate.ps1`
+  `.\venv\Scripts\Activate.ps1`
 
 <li>Install Django:</li>
 
