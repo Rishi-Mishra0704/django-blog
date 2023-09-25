@@ -91,19 +91,30 @@ Use Terminal:
 Install this project with:
 
 <li>Create a Virtual Environment:</li>
-`python -m venv venv`
 
+`python -m venv venv`
 <li>Activate the Virtual Environment:</li>
+
 `cd cloned folder`
+
 <ol>On macOS and Linux:</ol>
+
 `source venv/bin/activate`
+
 <ol>On Windows (Command Prompt):</ol>
+
 `venv\Scripts\activate`
+
 <ol>On Windows (PowerShell):</ol>
+
 `.\venv\Scripts\Activate.ps1`
+
 <li>Install Django:</li>
+
 `pip install django`
+
 Run the Django Server:
+
 `py manage.py runserver`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
